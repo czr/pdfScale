@@ -189,6 +189,8 @@ gsPageScale() {
         "$GSBIN" \
 -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dSAFER \
 -dCompatibilityLevel="1.5" -dPDFSETTINGS="/printer" \
+-dColorImageResolution=600 -dColorImageDownsampleType=/Bicubic \
+-dGrayImageResolution=600 -dGrayImageDownsampleType=/Bicubic \
 -dColorConversionStrategy=/LeaveColorUnchanged \
 -dSubsetFonts=true -dEmbedAllFonts=true \
 -dDEVICEWIDTHPOINTS=$PGWIDTH -dDEVICEHEIGHTPOINTS=$PGHEIGHT \
@@ -217,6 +219,8 @@ gsPageResize() {
         "$GSBIN" \
 -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dSAFER \
 -dCompatibilityLevel="1.5" -dPDFSETTINGS="/printer" \
+-dColorImageResolution=600 -dColorImageDownsampleType=/Bicubic \
+-dGrayImageResolution=600 -dGrayImageDownsampleType=/Bicubic \
 -dColorConversionStrategy=/LeaveColorUnchanged \
 -dSubsetFonts=true -dEmbedAllFonts=true \
 -dDEVICEWIDTHPOINTS=$RESIZE_WIDTH -dDEVICEHEIGHTPOINTS=$RESIZE_HEIGHT \
